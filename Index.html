@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" dir="ltr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Nefér Land</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> <!-- Navigation Bar --> 
+  <nav class="navbar"> 
+   <div class="container"> <a href="#" class="logo"><span>Nefér</span>Land <i class="fas fa-ankh"></i></a> 
+    <ul class="nav-links"> 
+     <li><a href="#home">Home</a></li> 
+     <li><a href="#egypt">In Egypt</a></li> 
+     <li><a href="#world">Around World</a></li> 
+     <li><a href="#about">About</a></li> 
+     <li><a href="#scan">Scan</a></li> 
+    </ul> 
+    <div class="language-switcher"> <select id="language-select"> <option value="en">English</option> <option value="ar">العربية</option> <option value="fr">Français</option> <option value="es">Español</option> </select> 
+    </div> 
+    <div class="mobile-menu-btn"> <i class="fas fa-bars"></i> 
+    </div> 
+   </div> 
+  </nav> <!-- Hero Section --> 
+  <section id="home" class="hero"> 
+   <div class="hero-content"> 
+    <h1>Discover Egypt's archaeological wonders around the world.</h1> 
+    <p>A journey through time to explore the antiquities of Egypt, its surroundings, and around the world.</p> <a href="#egypt" class="btn">Start Journey</a> 
+   </div> 
+   <div class="hero-slider"> 
+    <div class="slide active" style="background-image: url('https://i.postimg.cc/PrhmffHV/a3b488b1e147956ade8381c02ba2717e.jpg');"></div> 
+    <div class="slide" style="background-image: url('https://i.postimg.cc/3JCF249H/be55df06d93b55934eb900ca946a291a.jpg');"></div> 
+    <div class="slide" style="background-image: url('https://i.postimg.cc/LsvtwrwQ/d1a56f088b5ade8bb669b3753507f5df.jpg');"></div> 
+   </div> 
+  </section> <!-- Egyptian Sites Section --> 
+  <section id="egypt" class="section"> 
+   <div class="container"> 
+    <div class="section-header"> 
+     <h2>Heritage sites in Egypt</h2> 
+     <p>Discover the greatness of Egyptian civilization and the history of Cairo</p> 
+    </div> 
+    <div class="tabs"> <button class="tab-btn active" data-tab="cairo">Cairo</button> <button class="tab-btn" data-tab="other">Around Cairo</button> 
+    </div> 
+    <div class="tab-content active" id="cairo"> 
+     <div class="sites-grid"></div> 
+    </div> 
+    <div class="tab-content" id="other"> 
+     <div class="sites-grid"></div> 
+    </div> 
+   </div> 
+  </section> <!-- World Sites Section --> 
+  <section id="world" class="section"> 
+   <div class="container"> 
+    <div class="section-header"> 
+     <h2>Egyptian Antiquities around the world</h2> 
+     <p>Discover the wonders of ancient Egyptian civilizations around the world</p> 
+    </div> 
+    <div class="country-filter"> <button class="country-btn active" data-country="all">All</button> <button class="country-btn" data-country="france">France</button> <button class="country-btn" data-country="uk">UK</button> <button class="country-btn" data-country="usa">USA</button> 
+    </div> 
+    <div class="sites-grid" id="all-sites"></div> 
+   </div> 
+  </section> <!-- Scanner Section --> 
+  <section id="scan" class="scanner-section"> 
+   <div class="container"> 
+    <div class="scanner-container"> 
+     <div class="scanner-box"> 
+      <div class="scanner-icon"> <i class="fas fa-camera"></i> 
+      </div> 
+      <h3>Scan Artifact</h3> 
+      <p class="scanner-text">Point your camera at an artifact to identify it</p> <button id="start-scan" class="btn scan-btn">Start Scanning</button> <button id="stop-scan" class="btn scan-btn hidden">Stop Scanning</button> 
+     </div> 
+     <div class="scanner-results"> 
+      <div class="result-content"> 
+       <h3 id="artifact-title">Piece Name</h3> 
+       <div class="artifact-image"> 
+        <img id="artifact-img" src="" alt="Artifact Image"> 
+       </div> 
+       <div class="artifact-details"> 
+        <p id="artifact-desc">Artifact description will appear here</p> 
+        <div class="audio-controls"> 
+         <p>Voice Description:</p> 
+         <div class="audio-btns"> <button class="audio-btn" data-lang="ar"><i class="fas fa-play"></i> العربية</button> <button class="audio-btn" data-lang="en"><i class="fas fa-play"></i> English</button> <button class="audio-btn" data-lang="fr"><i class="fas fa-play"></i> Français</button> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> <!-- Footer --> 
+  <footer class="footer"> 
+   <div class="container"> 
+    <div class="footer-logo"> <a href="#" class="logo"><span>Nefér</span>Land <i class="fas fa-ankh"></i></a> 
+     <div class="footer-about"> 
+      <h4>About Nefér Land</h4> 
+      <p>Discover, Learn, Explore. Nefér Land is a digital platform dedicated to preserving and showcasing the rich archaeological heritage of Egypt and the world.</p> 
+     </div> 
+    </div> 
+    <div class="footer-links"> 
+     <h3>Quick Links</h3> 
+     <ul> 
+      <li><a href="#home">Home</a></li> 
+      <li><a href="#egypt">Egypt</a></li> 
+      <li><a href="#world">World</a></li> 
+      <li><a href="#scan">Scanner</a></li> 
+      <li><a href="#about">About</a></li> 
+     </ul> 
+    </div> 
+    <div class="footer-social"> 
+     <h3>Follow Us</h3> 
+     <div class="social-icons"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> 
+     </div> 
+    </div> 
+    <div class="copyright"> 
+     <p>© Nefér Land 2025. All Rights Reserved.</p> 
+    </div> 
+   </div> 
+  </footer> <!-- Artifact Modal --> 
+  <div class="artifact-modal"> 
+   <div class="modal-content"> <button class="close-modal">×</button> 
+    <div class="modal-body"></div> 
+   </div> 
+  </div> 
+  <script src="script.js"></script> 
+ </body>
+  </html>
